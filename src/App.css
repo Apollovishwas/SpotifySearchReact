@@ -1,0 +1,129 @@
+.App {
+    text-align: center;
+    padding: 5%;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+.App-title {
+    font-size: 26px;
+    padding: 3%;
+}
+
+
+/****Profile**/
+
+.profile {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.profile-info{
+    margin-left: 20px;
+    text-align: left;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    border-radius: 75px;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 25px;
+}
+
+.profile-followers, .profile-genres {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+span {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+/***The gallery**/
+
+
+.track {
+    margin-top: 4% ;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.track-image {
+    width: 220px;
+    height: 220px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    object-fit: cover;
+    
+    position: absolute;
+     
+}
+.track-name{
+    position: absolute;
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+    width: 214px;
+    margin-left: 3px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px ;
+    bottom: 0;
+}
+
+/*The play button*/
+
+.track-play {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+}
+
+.track-play-inner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    padding-top: 13px;
+    margin-top: 80px;
+    margin-left: 80px;
+    opacity: 0;
+
+}
+
+.track-play-inner:hover {
+    opacity: 0.75;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.75;
+    }
+}
